@@ -1,12 +1,12 @@
 {
-  "name": "@bgd-labs/js-utils",
-  "version": "1.4.2",
+  "name": "@eden-labs/js-utils",
+  "version": "1.0.0",
   "description": "common utils for web3 projects",
-  "author": "BGS labs (@bgdlabs)",
+  "author": "Eden Labs (@eden-labs)",
   "bugs": {
-    "url": "https://github.com/bgd-labs/js-utils/issues"
+    "url": "https://github.com/CeoFred/js-utils/issues"
   },
-  "homepage": "https://github.com/bgd-labs/js-utils#readme",
+  "homepage": "https://github.com/CeoFred/js-utils#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -50,7 +50,7 @@
     "ts-node": "^10.9.1",
     "tsup": "^8.0.2",
     "typescript": "^5.1.6",
-    "viem": "^2.7.15",
+    "viem": "^2.19.4",
     "vitest": "^1.3.1"
   },
   "dependencies": {

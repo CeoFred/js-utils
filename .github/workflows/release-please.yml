@@ -10,7 +10,7 @@ on:
 name: release-please
 jobs:
   test-node:
-    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    uses: ceofred/github-workflows/.github/workflows/test-node.yml@main
     secrets: inherit
 
   release-please:
@@ -26,7 +26,7 @@ jobs:
           pull-request-header: 'I have created a release'
 
   release-node:
-    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
+    uses: ceofred/github-workflows/.github/workflows/release-node.yml@main
     if: ${{ needs.release-please.outputs.releaseCreated }}
     needs:
       - test-node
