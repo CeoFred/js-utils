@@ -29,6 +29,7 @@ import {
 } from 'viem/chains';
 import { ChainId } from './chainIds';
 import { Client } from 'viem';
+import { assetChainTestnet } from './chainIds';
 
 const commonConfig = { timeout: 30_000 };
 
@@ -163,7 +164,13 @@ export const baseSepoliaClient = createClient({
   transport: http(process.env.RPC_BASE_SEPOLIA, commonConfig),
 });
 
+export const assetchainTestnetClient = createClient({
+  chain: assetChainTestnet,
+  transport: http(process.env.RPC_ASSETCHAIN_TESTNET, commonConfig),
+});
+
 export const CHAIN_ID_CLIENT_MAP: Record<number, Client> = {
+  [ChainId.assetchain_testnet]: assetchainTestnetClient,
   [ChainId.mainnet]: mainnetClient,
   [ChainId.arbitrum_one]: arbitrumClient,
   [ChainId.arbitrum_goerli]: arbitrumGoerliClient,
