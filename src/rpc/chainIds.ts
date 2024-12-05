@@ -28,7 +28,7 @@ import {
   assetChain,
   assetChainTestnet
 } from 'viem/chains';
-import {defineChain} from 'viem'
+// import {defineChain} from 'viem'
 
 
 // export const assetChainTestnet = /*#__PURE__*/ defineChain({
@@ -58,32 +58,32 @@ import {defineChain} from 'viem'
 //   },
 // });
 
-export const assetChainMainnet = /*#__PURE__*/ defineChain({
-  id: 42_420,
-  name: 'AssetChain',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Real World Asset',
-    symbol: 'RWA',
-  },
-  rpcUrls: {
-    default: { http: ['https://mainnet-rpc.assetchain.org'] },
-  },
-  blockExplorers: {
-    default: {
-      name: 'Asset Chain Explorer',
-      url: 'https://scan.assetchain.org',
-      apiUrl: 'https://scan.assetchain.org/api',
-    },
-  },
-  testnet: false,
-  contracts: {
-    // multicall3: {
-    //   address: '0x989F832D35988cb5e3eB001Fa2Fe789469EC31Ea',
-    //   blockCreated: 17177,
-    // },
-  },
-});
+// export const assetChainMainnet = /*#__PURE__*/ defineChain({
+//   id: 42_420,
+//   name: 'AssetChain',
+//   nativeCurrency: {
+//     decimals: 18,
+//     name: 'Real World Asset',
+//     symbol: 'RWA',
+//   },
+//   rpcUrls: {
+//     default: { http: ['https://mainnet-rpc.assetchain.org'] },
+//   },
+//   blockExplorers: {
+//     default: {
+//       name: 'Asset Chain Explorer',
+//       url: 'https://scan.assetchain.org',
+//       apiUrl: 'https://scan.assetchain.org/api',
+//     },
+//   },
+//   testnet: false,
+//   contracts: {
+//     // multicall3: {
+//     //   address: '0x989F832D35988cb5e3eB001Fa2Fe789469EC31Ea',
+//     //   blockCreated: 17177,
+//     // },
+//   },
+// });
 
 export const ChainId = {
   assetchain: assetChain.id,
